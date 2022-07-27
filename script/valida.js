@@ -28,7 +28,7 @@ if(login === ""){
     alert("senha obrigatoria");
     return false;
 }else {
-    if(login !="senai" || "0123456789" ){
+    if(login != senai){
         alert("Login inválido");
         return false;
     }else if (senha != 123){
@@ -41,26 +41,6 @@ if(login === ""){
     }
 }
     }
-    /*if(login === " "){
-        alert("Login obrigatorio");
-        return false;
-    }else if (senha === " "){
-        alert("senha obrigatória");
-        return false;
-    }else {
-    if(login != "senai"){
-        alert("Login inválido");
-        return false;
-    }else if (senha != 123){
-        alert("senha inválida");
-        return false;
-    }else{
-
-        window.sessionStorage.setItem('login',login);
-        return true;
-    }
-
- */
 
 
     
