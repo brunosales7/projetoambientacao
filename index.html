@@ -2,17 +2,100 @@
 <html>
 	<head>
 	    <title>Módulo de Autenticação</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap" rel="stylesheet">
 		<style>
 			body{ background-image: url('bg.jpg'); }
 			img { opacity : 0.7; }
 		</style>
-		 <link rel="stylesheet" type="text/css" href="geral.css">
+		 
+  <link rel="stylesheet" href="crc/css/globais/reset.css">
+  <link rel="stylesheet" href="geral css/geral.css">
+
 	</head>
 
 	<body>
+		<header class="header__img">
+			<div class="header container-geral">
+			  <div class="header__logo">
+				<h1 class="header__logo-logo font-size-l">Senai</h1>
+			  </div>
+			  <nav class="header__nav">
+				<button class="menu-button hidden fullbutton" data-menu="button"></button>
+				<ul class="header__nav-lista hidden" data-menu="list">
+				  <li class="font-size-s text-color-dark"><a href="#about">About</a></li>
+				  <li class="font-size-s text-color-dark"><a href="#skills">Skills</a></li>
+				  <li class="font-size-s text-color-dark"><a href="#work">Work</a></li>
+				  <li class="font-size-s text-color-dark"><a href="#contact">Contact</a></li>
+				</ul>
+			  </nav>
+			</div>
+		  </header>
+		  <section class="apresentacao container-geral">
+			<div class="apresentacao__texto">
+			  <span class="apresentacao__texto-ola font-size-s">Olá, Seja bem Vindo ao Senai-Brasília</span>
+			  
+			  <p class="apresentacao__texto-descricao font-size-l">Módulo de Autenticação</p>
+			</div>
+			<div class="apresentacao__img">
+			  <img class="apresentacao__img-img border-shadow" src="img/download.jpg" alt="Foto do Senai">
+			</div>
+		  </section>
 		
+		  <section class="sobre container-geral" id="about">
+			<h2 class="sobre__titulo font-size-l">Cursos Disponiveis</h2>
+			<div class="sobre__div-flex">
+			  <div class="sobre__texto font-size-x">
+				<p>Desenvolvedor C#</p>
+				<p>Desenvoldedor Java</p>
+				<p>Desenvolvedor Front-end</p>
+			  </div>
+			  <div class="sobre__redes font-size-m">
+				<a class="sobre__redes-linkedin border-shadow" href="https://www.sistemafibra.org.br/senai/taguatinga/cursos-e-servicos/tecnologia-de-informacao/120-desenvolvedor-c" target="_blank">Informações C#</a>
+				<a class="sobre__redes-github border-shadow" href="https://www.sistemafibra.org.br/senai/taguatinga/cursos-e-servicos/tecnologia-de-informacao/61-desenvolvedor-java" target="_blank">Informações Java</a>
+				<a class="sobre__redes-cv border-shadow" href="https://barueri.sp.senai.br/curso/95402/136/programador-frontend?bolsa=true" target="_blank">Informações Front-end</a>
+			  </div>
+			</div>
+		  </section>
+		  <section class="skills container-geral" id="skills">
+			<h2 class="skills__titulo font-size-l" data-anime="titulo">Cursos Disponiveis</h2>
+			<div class="skills__flex-div">
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				<img src="crc/img/html.png" alt="">
+				<span class="skills__skill-texto font-size-s text-color-dark">Html</span>
+			  </div>
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				<img src="crc/img/css-3.png" alt="">
+				<span class="skills__skill-texto font-size-s text-color-dark">Css</span>
+			  </div>
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				<img src="crc/img/java-script.png" alt="">
+				<span class="skills__skill-texto font-size-s text-color-dark">JavaScript</span>
+			  </div>
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				<img src="crc/img/atom.png" alt="">
+				<span class="skills__skill-texto font-size-s text-color-dark">React</span>
+			  </div>
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				<img src="crc/img/sql-server.png" alt="">
+				<span class="skills__skill-texto font-size-s text-color-dark">Sql Server</span>
+			  </div>
+			  <div class="skills__skill border-shadow" data-anime="skill">
+				  <img src="crc/img/hashtag.png" alt="">
+				  <span class="skills__skill-texto font-size-s text-color-dark">C#</span>
+				</div>
+				<div class="skills__skill border-shadow" data-anime="skill">
+				  <img src="crc/img/java.png" alt="">
+				  <span class="skills__skill-texto font-size-s text-color-dark">Java</span>
+				</div>
+			  <br>
+			  <br>
+			</div>
+		  </section>
 		</form>
-			<img src="img/logo.png" alt="">
+			
 			<form method="post" action="sucesso.html" onsubmit="return validar()">
 			Login <input type= "text" name="login" id="login">
 			senha <input type= "password" name="senha" id="senha">
