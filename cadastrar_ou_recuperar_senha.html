@@ -8,5 +8,24 @@
 </head>
 <body>
     
+    Usuario usuario = new Usuario();
+    usuario.Login = textLogin.Text;
+    usuario.Senha = textSenha.Text;
+   // MessageBox.Show("Seja Bem Vindo!!" + usuario.Login);
+    // MessageBox.Show($"Seja Bem Vindo!! {usuario.Login}!");
+    if (usuario.Login.Equals(""))
+    {
+        MessageBox.Show("Login obrigatorio");
+        textLogin.Focus();
+    }
+    else if (usuario.Senha.Equals(""))
+    {
+        MessageBox.Show("Senha Obrigatorio" + usuario.Senha);
+        textSenha.Focus();
+    }
+    else
+    {
+        MessageBox.Show("Seja Bem Vindo!!" + usuario.Login);
+    }
 </body>
 </html>
